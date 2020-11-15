@@ -1,0 +1,21 @@
+            Random r = new Random();
+            int P1x = 0;
+            int P1y = 0;
+            int P2x = r.Next(0, 1001);
+            int P2y = r.Next(0, 1001);
+            Console.WriteLine("P2 X:{0},Y:{1}", P2x, P2y);
+            while (P1x != P2x || P1y != P2y)
+            { 
+                if(P1x < P2x)
+                {
+                    P1x++;
+                    Console.WriteLine("X:{0},Y:{1}",P1x,P1y);
+
+                }
+                if (P1y < P2y)
+                {
+                    P1y++;
+                    Console.WriteLine("X:{0},Y:{1}", P1x, P1y);
+                }
+            }
+            Console.WriteLine("P1 arrived it's destination X:{0},Y:{1}", P1x, P1y);
