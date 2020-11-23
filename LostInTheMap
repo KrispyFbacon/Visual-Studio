@@ -1,0 +1,31 @@
+Random r = new Random();
+int X = r.Next(0, 500);
+int Y = r.Next(0, 500);
+if (X < 250 && Y < 250)
+{
+Console.WriteLine("Player is located on the top left, X:{0} Y:{1}",X,Y);
+}
+if (X == 250 && Y < 250)
+{
+Console.WriteLine("Player is located on the top, X:{0} Y:{1}", X, Y);
+}
+if (X > 250 && Y < 250)
+{
+Console.WriteLine("Player is located on the top right, X:{0} Y:{1}", X, Y);
+}
+if (X < 250 && Y > 250)
+{
+Console.WriteLine("Player is located on the bottom left, X:{0} Y:{1}", X, Y);
+}
+if (X == 250 && Y > 250)
+{
+Console.WriteLine("Player is located on the bottom, X:{0} Y:{1}", X, Y);
+}
+if (X > 250 && Y > 250)
+{
+Console.WriteLine("Player is located on the bottom right, X:{0} Y:{1}", X, Y);
+}
+if (X == 250 && Y == 250)
+{
+Console.WriteLine("Player is located on the center");
+}
