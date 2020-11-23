@@ -1,0 +1,13 @@
+            Random r = new Random();
+            int n = r.Next(10, 21);
+            int i;
+            int ant1 = 1;
+            int ant2 = 0;
+            int res = 0;
+            Console.WriteLine();
+            for (i = 1; i <= n; i++)
+            {
+                res = ant1 + ant2;
+                ant2 = ant1;
+                ant1 = res;
+                Console.WriteLine(+res);
