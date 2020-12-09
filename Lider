@@ -1,0 +1,20 @@
+            Random r = new Random();
+            int i;
+            int Nivel;
+            int melhor = 0;
+            int[] Aluno;
+            Aluno = new int[r.Next(5, 50)];
+            for(i=1; i < Aluno.Length; i++ )
+            {
+                Aluno[i] = r.Next(1,121);
+                if (Aluno[i] >= melhor)
+                {
+                    melhor = Aluno[i];
+                }
+            }
+            for (i = 1; i < Aluno.Length; i++)
+            {
+                Console.WriteLine(Aluno[i]);
+            }
+            Console.WriteLine("O lider é " +melhor);
+        }
